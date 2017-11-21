@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title>Radio</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="author" content="Stephan Blokzyl">
+  <meta name="date" content="2017-08-03T22:00:00+01:00">
+  <meta name="robots" content="nofollow">
+  <meta name="viewport" content="width=320">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <style>
+   body {background-color:black;}
+   div.frame {position:relative; width:320px; height:480px;}
+   div.logo {position:relative; top:10px; left:10px; width:80px; height:80px; border-radius:10px;background-position:left top;}
+   div.name {position:relative; top:-35px; left:110px; width:220px; height:20px;}
+   div.impressum {position:relative; top:20px; left:10px; color:dimgray; font-size:11px;}
+   img {margin:0px; padding:0px;}
+   a {text-decoration:none; color:white; font-family:verdana; font-size:15px;}
+
+   #fbutton {display:none; position:fixed; right:5%; bottom:5%; z-index:99; border:none; outline:none; background-color:white; color:black; cursor:pointer; padding:10px; width:40px; height:40px; border-radius:50%; font-family:verdana; font-size:15px; opacity: 0.25;}
+  </style>
+ </head>
+ <body>
+  <button onclick="topFunction()" id="fbutton" title="Go to top">^</button>
+  <script>
+   window.onscroll = function(){scrollFunction()};
+   function scrollFunction()
+   {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)
+    {
+     document.getElementById("fbutton").style.display = "block";
+    }
+    else
+    {
+     document.getElementById("fbutton").style.display = "none";
+    }
+   }
+   function topFunction()
+   {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+   }
+  </script>
+  <div class="frame">
+   <a href="http://avw.mdr.de/streams/284300-0_mp3_high.m3u">
+    <div class="logo" style="background:url(logos/mdr.bmp)">&nbsp;</div>
+    <div class="name">MDR 1 Radio Thüringen</div>
+   </a>
+   <a href="http://www.ndr.de/resources/metadaten/audio/m3u/ndr1niedersachsen.m3u">
+    <div class="logo" style="background:url(logos/ndr.bmp)">&nbsp;</div>
+    <div class="name">NDR 1 Radio Niedersachsen</div>
+   </a>
+   <a href="http://avw.mdr.de/streams/284340-0_mp3_high.m3u">
+    <div class="logo" style="background:url(logos/mdr_aktuell.bmp)">&nbsp;</div>
+    <div class="name">MDR Aktuell Nachrichten</div>
+   </a>
+   <a href="http://streams.br.de/bayern1fran_2.m3u">
+    <div class="logo" style="background:url(logos/br1.bmp)">&nbsp;</div>
+    <div class="name">Bayern 1</div>
+   </a>
+   <a href="http://streams.br.de/bayern1obb_2.m3u">
+    <div class="logo" style="background:url(logos/br2.bmp)">&nbsp;</div>
+    <div class="name">Bayern 2</div>
+   </a>
+   <a href="http://avw.mdr.de/streams/284350-0_mp3_high.m3u">
+    <div class="logo" style="background:url(logos/mdr_klassik.bmp)">&nbsp;</div>
+    <div class="name">MDR Klassik</div>
+   </a>
+   <a href="http://stream.klassikradio.de/live/mp3-192/stream.klassikradio.de/">
+    <div class="logo" style="background:url(logos/klassik_radio.bmp)">&nbsp;</div>
+    <div class="name">Klassikradio</div>
+   </a>
+   <a href="http://mp3-live.swr3.de/swr3_m.m3u">
+    <div class="logo" style="background:url(logos/swr3.bmp)">&nbsp;</div>
+    <div class="name">SWR 3</div>
+   </a>
+   <!--
+   <a href="#">
+    <div class="logo" style="background-color:dimgray">&nbsp;</div>
+    <div class="logo" style="background:url(logos/.bmp)">&nbsp;</div>
+    <div class="name">Sendername</div>
+   </a>
+   -->
+   <a href="impressum.html">
+    <div class="impressum">
+     <p>Impressum und Datenschutzerklärung finden Sie hier.</p>
+     <p>&nbsp;</p>
+    </div>
+   </a>
+  </div>
+ </body>
+</html>
